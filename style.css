@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Odibee Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+      
+#title{
+    font-family: "Peralta", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./8iAP1eI.webp);
+    background-size: cover;
+}
+
+.Calculator{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 16px;  
+    box-shadow: 0px 3px 15px;
+    background: rgba(0, 0, 0, 0.3);   
+}
+
+input{
+    width: 310px;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: inset 1px 4px 20px black;
+    font-size: 60px;
+    text-align: right;
+    text-shadow: 0px 1px 5px rgba(0,0,0, 0.2);
+}
+input::placeholder{
+    color: black;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    background-color: rgb(241, 200, 96);
+    font-size: 30px;
+    box-shadow: inset -5px -6px 2px  rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 1px 5px  rgba(0,0,0, 0.2);
+}
+
+.Operator{
+    color: darkred;
+    font-weight: bolder;
+}
+
+#All-Clear, #Delete{
+    background-color: red;
+    color: palevioletred;
+    font-weight: normal;
+}
+
+#Equals-to{
+    background-color: black;
+    color: orangered;
+}
+
+#title {
+        text-align: center;
+        margin-bottom: 20px; /* Add some space between the heading and the calculator */
+        color: lawngreen; /* Adjust color as needed */
+        font-size:60px;
+        text-shadow: 
+        -2px -2px 0px black, /* top-left shadow */
+        7px -2px black, /* top-right shadow */
+        -2px 2px 0px black, /* bottom-left shadow */
+        2px 2px 0px black; /* bottom-right shadow */
+    }
+.Heading {
+        text-align: center;
+      }
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .Calculator {
+      width: 100%;
+      padding: 10px;
+
+    
+    }
+  
+    input {
+      padding: 15px;
+      font-size: 2rem;
+    }
+  
+    button {
+      height: 50px;
+      font-size: 1.2rem;
+    }
+
+    body{
+        background-size: cover;
+    }
+    #title{
+        font-size: 50px;
+    }
+  }
+  
